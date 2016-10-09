@@ -1,0 +1,97 @@
+@import 'https://fonts.googleapis.com/css?family=Voltaire';
+body {
+  color: white;
+  height: 200vh;
+  font-family: "Voltaire";
+}
+
+.hamburger-icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 40px;
+  width: 40px;
+  position: absolute;
+  right: 2em;
+  top: 1em;
+  cursor: pointer;
+  z-index: 5;
+}
+
+.hamburger-icon .bar {
+  height: 3px;
+  width: 100%;
+  background-color: white;
+  border-radius: 2em;
+  transition: all .3s ease-in-out;
+}
+
+.hamburger-icon:hover .bar:nth-child(2) {
+  transform: rotate(45deg);
+}
+
+.hamburger-icon:hover .bar:nth-child(2):after {
+  transform: rotate(135deg);
+}
+
+.hamburger-icon:hover .bar:nth-child(1) {
+  transform: scale(0);
+  transform-origin: left;
+}
+
+.hamburger-icon:hover .bar:nth-child(3) {
+  transform: scale(0);
+  transform-origin: right;
+}
+
+.background {
+  height: 100vh;
+  background-image: url("../images/back.jpg");
+  background-position: center bottom;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.foreground {
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.text-wrap {
+  position: absolute;
+  color: white;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  width: 80%;
+}
+
+.text-wrap .text {
+  font-size: 68px;
+  display: inline-block;
+  padding: 0 .2em;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.guitar {
+  background-image: url(../images/guitar.png);
+  position: absolute;
+  bottom: 0;
+  right: 9%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 570px;
+  width: 319px;
+  background-color: transparent;
+  background-position: bottom;
+}
+
+.content {
+  color: black;
+}
+
+.content .container {
+  margin-top: 10vh;
+}
