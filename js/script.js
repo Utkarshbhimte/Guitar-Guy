@@ -21,5 +21,9 @@ $(document).ready(function() {
       $('.hamburger-icon').toggleClass('active');
     });
 
+    $('.foreground').on('click', function(event) {
+      event.preventDefault();
+      $('.sidenav').removeClass('active');
+      $('.hamburger-icon').removeClass('active');    });
 
 });
