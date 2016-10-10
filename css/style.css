@@ -54,7 +54,7 @@ body {
   top: 0;
   bottom: 0;
   right: 0;
-  width: 200px;
+  width: 300px;
   background-color: white;
   color: black;
   height: 100%;
@@ -80,6 +80,10 @@ body {
   display: block;
   margin: 2em auto;
   font-size: 24px;
+}
+
+.sidenav ul li {
+  cursor: pointer;
 }
 
 .background {
@@ -111,19 +115,6 @@ body {
   display: inline-block;
   padding: 0 .2em;
   background-color: rgba(0, 0, 0, 0.1);
-}
-
-.guitar {
-  background-image: url(../images/guitar.png);
-  position: absolute;
-  bottom: 0;
-  right: 9%;
-  background-repeat: no-repeat;
-  background-size: contain;
-  height: 570px;
-  width: 319px;
-  background-color: transparent;
-  background-position: bottom;
 }
 
 .content {
