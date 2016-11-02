@@ -1,3 +1,5 @@
+@import "normalize"
+@import "skeleton"
 @import 'https://fonts.googleapis.com/css?family=Voltaire'
 
 body
@@ -45,7 +47,7 @@ body
   bottom: 0
   right: 0
   width: 300px
-  background-color: white
+  background-color: #FFF
   color: black
   height: 100%
   z-index: 4
@@ -83,7 +85,7 @@ body
 
 .text-wrap
   position: absolute
-  color: white
+  color: #FFF
   top: 50%
   left: 50%
   transform: translateX(-50%) translateY(-50%)
@@ -113,3 +115,47 @@ body
   color: black
   .container
     margin-top: 10vh
+    .six.columns
+      min-height: 45vh
+    img
+      height: auto
+      width: 100%
+    .guitar-image-one
+      filter: drop-shadow(0px 5px 5px #c3c3c3s)
+      &.shadow
+        margin-top: 100px
+        // animation: 3s ease-in-out infinite floatingShadow2
+        // margin-bottom: -60px
+    .body
+      animation: 3s ease-in-out infinite floating
+      z-index: 4
+    .shadow
+      z-index: 3
+      margin-top: -60px
+      margin-left: -30px
+      bottom: 0
+      animation: 3s ease-in-out infinite floatingShadow
+      transform: rotateX(70deg) translateY(-40px) translateX(15px) scale(.9)
+      margin-top: -60px
+      filter: blur(10px) grayscale(1) contrast(0) opacity(.4)
+      left: 0
+
+    .guitar-image-two
+      &:nth-child(1)
+        margin-top: 30px
+
+
+@keyframes floating
+  0%,100%
+    transform: translateY(0)
+  50%
+    transform: translateY(10px)
+@keyframes floatingShadow
+  0%,100%
+    margin-top: -25px
+    transform: scaleY(.4) translateX(15px) scale(.85)
+    filter: blur(30px) grayscale(1) contrast(0) opacity(.4)
+  50%
+    transform: scaleY(.4) translateX(20px) scale(.9)
+    margin-top: -45px
+    filter: blur(10px) grayscale(1) contrast(0) opacity(.4)
