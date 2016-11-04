@@ -116,7 +116,17 @@ body
   .container
     margin-top: 10vh
     .six.columns
-      min-height: 45vh
+      height: 50vh
+      overflow: hidden
+      .heading
+        position: absolute
+        top: 35vh
+        background-color: black
+        color: white
+        padding: .8em 5em .5em 1em
+        z-index: 14
+        h3
+          margin: 0
     img
       height: auto
       width: 100%
@@ -141,8 +151,8 @@ body
       left: 0
 
     .guitar-image-two
-      &:nth-child(1)
-        margin-top: 30px
+      &.body
+        margin-top: 40px
 
 
 @keyframes floating
