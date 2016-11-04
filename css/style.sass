@@ -3,9 +3,10 @@
 @import 'https://fonts.googleapis.com/css?family=Voltaire'
 
 body
-  color: white
+  color: black
   height: 200vh
   font-family: "Voltaire"
+  padding-bottom: 50vh
 
   // hamburger-icon
 
@@ -88,6 +89,7 @@ body
   color: #FFF
   top: 50%
   left: 50%
+  color: white
   transform: translateX(-50%) translateY(-50%)
   width: 80%
   .text
@@ -96,20 +98,6 @@ body
     padding: 0 .2em
     background-color: transparentize(black, .9)
 
-// Useless Attempt at this point
-
-// .guitar
-//     background-image: url(../images/guitar.png)
-//     position: absolute
-//     bottom: 0
-//     right: 9%
-//     background-repeat: no-repeat
-//     background-size: contain
-//     height: 570px
-//     width: 319px
-//     background-color: transparent
-//     background-position: bottom
-
 // text content after everything
 .content
   color: black
@@ -117,10 +105,9 @@ body
     margin-top: 10vh
     .six.columns
       height: 50vh
-      overflow: hidden
       .heading
         position: absolute
-        top: 35vh
+        top: 25vh
         background-color: black
         color: white
         padding: .8em 5em .5em 1em
@@ -154,6 +141,48 @@ body
       &.body
         margin-top: 40px
 
+.find-events
+  background-color: #212121
+  .seven.columns
+    height: 100vh
+    background:
+      size: cover
+      repeat: no-repeat
+      image: url(../images/findEvent.jpg)
+      position: -10vw center
+      attachment: fixed
+  .five.columns
+    padding-top: 2em
+    color: white
+    float: right
+    .event-wrap
+      display: flex
+      flex-wrap: wrap
+      .card
+        color: black
+        background-color: white
+        display: inline-block
+        margin: 12px
+        width: 300px
+        padding: .7em 1em
+        box-shadow: 0 0 4px 0 #c3c3c3
+        h5
+          margin-bottom: 0px
+          line-height: 28px
+        span
+          display: block
+          color: #a9a9a9
+        a
+          float: right
+          display: inline-block
+          border: 4px solid #212121
+          color: #212121
+          padding: .3em .8em
+          transition: all .3s ease-in-out
+          transform-origin: left
+          &:hover
+            color: #FFF
+            box-shadow: inset 100px 0 0 0 #212121
 
 @keyframes floating
   0%,100%
